@@ -22,7 +22,7 @@ A flashcard web app for DevOps, SRE, and Cloud Engineers preparing for technical
 
 ## 🚀 Try It
 
-Visit: **[GitHub Pages URL]**
+Visit: **[https://cmccrabface.github.io/devops-knowledge-cards/](https://cmccrabface.github.io/devops-knowledge-cards/)**
 
 ## 💰 Pricing
 
@@ -101,4 +101,4 @@ Questions curated from real interview experiences, AWS docs, Kubernetes docs, an
 
 ---
 
-**Ready to ace your next DevOps interview?** → [Start Learning]([GitHub Pages URL])
+**Ready to ace your next DevOps interview?** → [Start Learning](https://cmccrabface.github.io/devops-knowledge-cards/)
