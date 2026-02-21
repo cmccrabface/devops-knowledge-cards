@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Knowledge Cards - Study</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <header class="topbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">DevOps Cards</span>
+        </a>
+        <div class="topbar-actions">
+            <button id="darkToggle" class="icon-btn" title="Toggle dark/light mode">🌙</button>
+            <button id="resetBtn" class="icon-btn" title="Reset progress">🔄</button>
+        </div>
+    </header>
+
+    <main class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3>📊 Progress</h3>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="progress-text" id="progressText">0 / 0 mastered</div>
+                <div class="streak-display" id="streakDisplay">🔥 0 day streak</div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>🏷️ Categories</h3>
+                <div class="filter-group" id="categoryFilters"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>📈 Difficulty</h3>
+                <div class="filter-group" id="difficultyFilters">
+                    <label class="filter-chip active" data-value="all">
+                        <input type="radio" name="difficulty" value="all" checked> All
+                    </label>
+                    <label class="filter-chip" data-value="Junior">
+                        <input type="radio" name="difficulty" value="Junior"> Junior
+                    </label>
+                    <label class="filter-chip" data-value="Mid">
+                        <input type="radio" name="difficulty" value="Mid"> Mid
+                    </label>
+                    <label class="filter-chip" data-value="Senior">
+                        <input type="radio" name="difficulty" value="Senior"> Senior
+                    </label>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>🎯 Mastery</h3>
+                <div class="filter-group" id="masteryFilters">
+                    <label class="filter-chip active" data-value="all">
+                        <input type="radio" name="mastery" value="all" checked> All
+                    </label>
+                    <label class="filter-chip" data-value="new">
+                        <input type="radio" name="mastery" value="new"> New
+                    </label>
+                    <label class="filter-chip" data-value="learning">
+                        <input type="radio" name="mastery" value="learning"> Learning
+                    </label>
+                    <label class="filter-chip" data-value="mastered">
+                        <input type="radio" name="mastery" value="mastered"> Mastered
+                    </label>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>📋 Category Stats</h3>
+                <div id="categoryStats" class="category-stats"></div>
+            </div>
+        </aside>
+
+        <!-- Card Area -->
+        <section class="card-area">
+            <div class="card-counter" id="cardCounter">Card 0 / 0</div>
+
+            <div class="card-container" id="cardContainer">
+                <div class="flashcard" id="flashcard" tabindex="0">
+                    <div class="flashcard-inner" id="flashcardInner">
+                        <div class="flashcard-front">
+                            <div class="card-meta">
+                                <span class="card-category" id="cardCategory">Loading...</span>
+                                <span class="card-difficulty" id="cardDifficulty"></span>
+                            </div>
+                            <div class="card-question" id="cardQuestion">Loading questions...</div>
+                            <div class="card-hint">Click or press Space to flip</div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="card-meta">
+                                <span class="card-category" id="cardCategoryBack"></span>
+                                <span class="card-label">Answer</span>
+                            </div>
+                            <div class="card-answer" id="cardAnswer"></div>
+                            <div class="card-explanation" id="cardExplanation"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Confidence buttons (visible after flip) -->
+            <div class="confidence-buttons" id="confidenceButtons">
+                <p class="confidence-prompt">How well did you know this?</p>
+                <div class="confidence-row">
+                    <button class="conf-btn conf-again" data-score="0" title="Didn't know it">❌ Again</button>
+                    <button class="conf-btn conf-hard" data-score="1" title="Got it, but hard">😬 Hard</button>
+                    <button class="conf-btn conf-good" data-score="2" title="Knew it">👍 Good</button>
+                    <button class="conf-btn conf-easy" data-score="3" title="Too easy!">⚡ Easy</button>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="card-nav">
+                <button class="nav-btn" id="prevBtn" title="Previous card">← Prev</button>
+                <button class="nav-btn" id="shuffleBtn" title="Shuffle cards">🔀 Shuffle</button>
+                <button class="nav-btn" id="nextBtn" title="Next card">Next →</button>
+            </div>
+
+            <!-- Empty state -->
+            <div class="empty-state" id="emptyState" style="display:none;">
+                <div class="empty-icon">🎉</div>
+                <h3>No cards match your filters</h3>
+                <p>Try adjusting your category, difficulty, or mastery filters.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile sidebar toggle -->
+    <button class="sidebar-toggle" id="sidebarToggle">☰ Filters</button>
+
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
