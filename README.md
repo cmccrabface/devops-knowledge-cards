@@ -1,81 +1,104 @@
 # ⚡ DevOps Knowledge Cards
 
-**Master your DevOps & SRE interviews with smart flashcards powered by spaced repetition.**
+A flashcard web app for DevOps, SRE, and Cloud Engineers preparing for technical interviews.
 
-🌐 **[Live Demo →](https://cmccrabface.github.io/devops-knowledge-cards/)**
+## 🎯 Features
 
-## Features
+- **100+ Curated Questions** across 7 categories:
+  - ☁️ AWS
+  - ☸️ Kubernetes
+  - 🏗️ Terraform
+  - 🐳 Docker
+  - 📊 Monitoring
+  - 🌐 Networking
+  - 🔐 Security
 
-- 🧠 **102 Expert-Curated Questions** — AWS, Kubernetes, Terraform, Docker, Monitoring, Networking, Security
-- 🔄 **Spaced Repetition** — Science-backed algorithm surfaces cards you need to review
-- 📈 **Progress Tracking** — See your mastery per category with visual stats
-- 🎯 **Smart Filters** — Filter by category, difficulty (Junior/Mid/Senior), and mastery level
-- 🌙 **Dark & Light Mode** — Easy on the eyes, day or night
-- 📱 **Responsive** — Works on desktop, tablet, and mobile
-- ⌨️ **Keyboard Shortcuts** — Space to flip, arrows to navigate, 1-4 to rate
-- 🔥 **Streak Tracking** — Stay motivated with daily study streaks
-- 💾 **Local Storage** — Progress saved in your browser, no account needed
+- **Spaced Repetition Algorithm** - Learn and retain better
+- **Progress Tracking** - See your mastery improve
+- **Difficulty Levels** - Junior, Mid, Senior
+- **Filter by Category** - Focus on what you need
+- **Dark/Light Mode** - Comfortable viewing
+- **Mobile Responsive** - Study anywhere
 
-## Tech Stack
+## 🚀 Try It
 
-- **HTML5 / CSS3 / Vanilla JavaScript** — No frameworks, no build step, no dependencies
-- **GitHub Pages** — Free, fast, global CDN
-- **localStorage** — Client-side progress persistence
+Visit: **[GitHub Pages URL]**
 
-## Quick Start
+## 💰 Pricing
 
-```bash
-# Clone the repo
-git clone https://github.com/cmccrabface/devops-knowledge-cards.git
-cd devops-knowledge-cards
+- **Free Tier**: 20 cards (sample from each category)
+- **Pro**: $4.99/month or $39/year
+  - Full access to 100+ cards
+  - All future updates
+  - Priority support
 
-# Open locally (any static server works)
-open index.html
-# or
-python3 -m http.server 8000
-```
+## 🛠️ Tech Stack
 
-## Project Structure
+- **Vanilla JavaScript** (no frameworks - fast & simple)
+- **LocalStorage** for progress persistence
+- **GitHub Pages** for hosting (zero cost)
+- **No backend needed** (freemium via license keys)
 
-```
-├── index.html          # Landing page
-├── app.html            # Flashcard study app
-├── css/
-│   ├── landing.css     # Landing page styles
-│   └── app.css         # App styles (dark/light themes)
-├── js/
-│   ├── questions.js    # Question database (102 questions)
-│   └── app.js          # App logic (SR algorithm, state, UI)
-├── MARKETING.md        # Launch strategy
-├── TODO.md             # Roadmap & action items
-└── README.md
-```
+## 📊 Question Categories
 
-## Keyboard Shortcuts
+### AWS (20 questions)
+S3, EC2, VPC, IAM, RDS, Lambda, CloudFormation, Auto Scaling, Security Groups, Load Balancers, and more.
 
-| Key | Action |
-|-----|--------|
-| `Space` / `Enter` | Flip card |
-| `→` / `l` | Next card |
-| `←` / `h` | Previous card |
-| `1` | Rate: Again |
-| `2` | Rate: Hard |
-| `3` | Rate: Good |
-| `4` | Rate: Easy |
-| `s` | Shuffle |
+### Kubernetes (20 questions)
+Pods, Deployments, Services, Ingress, RBAC, Secrets, ConfigMaps, HPA, DaemonSets, Operators, and more.
 
-## Categories
+### Terraform (15 questions)
+IaC workflows, state management, modules, providers, workspaces, import, count vs for_each, and more.
 
-| Category | Questions | Topics |
-|----------|-----------|--------|
-| ☁️ AWS | 15 | VPC, EC2, S3, IAM, Lambda, ALB, CloudFormation |
-| ☸️ Kubernetes | 15 | Pods, Deployments, Services, RBAC, HPA, Networking |
-| 🏗️ Terraform | 15 | State, Modules, Variables, Providers, Workspaces |
-| 🐳 Docker | 15 | Images, Containers, Networking, Security, Multi-stage |
-| 📊 Monitoring | 14 | Prometheus, Grafana, SLOs, OpenTelemetry, Alerting |
-| 🌐 Networking | 14 | DNS, TCP/UDP, TLS, CDN, Service Mesh, BGP |
-| 🔒 Security | 14 | Zero Trust, RBAC, Secrets, WAF, Supply Chain |
+### Docker (15 questions)
+Containers, Dockerfile optimization, multi-stage builds, networking, volumes, Compose, security, and more.
 
-## License
+### Monitoring (12 questions)
+Metrics, logs, traces, Prometheus, SLOs, error budgets, alerting strategies, ELK stack, and more.
 
-MIT — Use it, learn from it, build on it.
+### Networking (10 questions)
+DNS, TCP/UDP, subnets, load balancers, CDNs, NAT gateways, network troubleshooting, and more.
+
+### Security (10 questions)
+Least privilege, secrets management, RBAC, incident response, encryption, WAF, container scanning, and more.
+
+## 🧠 Learning Methodology
+
+We use **scenario-based questions** instead of just definitions. Each card includes:
+- **Question**: Real-world scenario
+- **Answer**: Concise solution
+- **Explanation**: Why it works, when to use it, common pitfalls
+
+Spaced repetition ensures you review cards at optimal intervals for long-term retention.
+
+## 🎓 Who Is This For?
+
+- DevOps/SRE engineers preparing for interviews
+- Mid-level engineers leveling up to senior
+- Cloud engineers transitioning to DevOps
+- Bootcamp graduates entering the field
+- Anyone wanting to deepen their DevOps knowledge
+
+## 🤝 Contributing
+
+Have a great question to add? Found an error? Open an issue or PR!
+
+## 📝 License
+
+MIT License - feel free to fork and adapt
+
+## 👨‍💻 Author
+
+Built by **Joe Azure** ([@thejazure](https://twitter.com/thejazure))
+
+- 20+ years in cloud/DevOps
+- Former Apple, Fabric Genomics
+- AWS/K8s expert
+
+## 🙏 Acknowledgments
+
+Questions curated from real interview experiences, AWS docs, Kubernetes docs, and DevOps best practices from Google SRE handbook.
+
+---
+
+**Ready to ace your next DevOps interview?** → [Start Learning]([GitHub Pages URL])
